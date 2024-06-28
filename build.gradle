@@ -56,9 +56,9 @@ bootBuildImage {
 	environment = ["BP_JVM_VERSION" : "17.*"]
 	docker {
 		publishRegistry {
-			username = project.findProperty("registryUsername")
-			password = project.findProperty("registryToken")
-			url = project.findProperty("registryUrl")
+			username = project.findProperty("REGISTRYUSERNAME")
+			password = project.findProperty("REGISTRYTOKEN")
+			url = project.findProperty("REGISTRYURL")
 		}
 	}
 }
